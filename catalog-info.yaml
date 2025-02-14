@@ -4,6 +4,7 @@ metadata:
   name: httpbin_api_for_backstage
   annotations:
     github.com/project-slug: arnaduga/httpbin_api_for_backstage
+    backstage.io/techdocs-ref: ./techdoc.md
 spec:
   type: other
   lifecycle: unknown
