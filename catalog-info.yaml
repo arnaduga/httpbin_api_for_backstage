@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: my-api
+  description: Mon API simple exposée dans Backstage
+  annotations:
+    github.com/project-slug: mon-org/mon-repo  # Remplace par ton repo
+spec:
+  type: openapi
+  lifecycle: production
+  owner: mon-equipe
+  definition:
+    $text: ./openapi.yaml  # Lien vers ta doc OpenAPI
