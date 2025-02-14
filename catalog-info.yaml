@@ -1,13 +1,10 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: my-api
-  description: Mon API simple exposée dans Backstage
+  name: httpbin_api_for_backstage
   annotations:
-    github.com/project-slug: mon-org/mon-repo  # Remplace par ton repo
+    github.com/project-slug: arnaduga/httpbin_api_for_backstage
 spec:
-  type: openapi
-  lifecycle: production
-  owner: mon-equipe
-  definition:
-    $text: ./openapi.yaml  # Lien vers ta doc OpenAPI
+  type: other
+  lifecycle: unknown
+  owner: backstage-admins
